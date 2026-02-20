@@ -13,7 +13,7 @@ export default function Future() {
                         Geleceğimiz
                     </h1>
                     <p className="max-w-2xl text-lg lg:text-xl text-slate-700 dark:text-slate-300 font-medium leading-relaxed font-semibold">
-                        Kuracağımız yuvalardan dolaşacağımız diyarlara, paylaştığımız hedeflere doğru özenle tasarlanmış bir yolculuk.
+                        Kuracağımız yuvalardan dolaşacağımız diyarlara, paylaştığımız hedeflere doğru özenle tasarlanmış bir yolculuk...
                     </p>
                 </div>
 
