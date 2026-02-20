@@ -1,7 +1,37 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Header() {
+    const [isPlaying, setIsPlaying] = useState(false);
+    const audioRef = useRef(null);
+
+    useEffect(() => {
+        // Otomatik oynatmayı denemek için sayfa yüklendiğinde çalışır
+        if (audioRef.current) {
+            const playPromise = audioRef.current.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    // Tarayıcı izin verirse otomatik oynatmaya başlar
+                    setIsPlaying(true);
+                }).catch(error => {
+                    // Tarayıcı otomatik sesi engelleyebilir (kullanıcı etkileşimi gerekebilir)
+                    console.log("Otomatik oynatma engellendi, kullanıcının tıklaması gerekiyor.");
+                    setIsPlaying(false);
+                });
+            }
+        }
+    }, []);
+
+    const togglePlay = () => {
+        if (isPlaying) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+        setIsPlaying(!isPlaying);
+    };
+
     return (
         <header className="fixed top-0 left-0 w-full z-50 px-6 py-4 lg:px-20">
             <nav className="flex items-center justify-between glass-nav px-8 py-3 rounded-full border border-primary/10 shadow-sm">
@@ -36,8 +66,12 @@ export default function Header() {
                 </div>
 
                 <div className="flex items-center gap-4">
-                    <button className="flex items-center justify-center size-10 rounded-full bg-primary/10 text-primary hover:bg-primary/20 transition-all border border-primary/20">
-                        <span className="material-symbols-outlined">music_note</span>
+                    {/* Audio Element - Kullanıcı buraya kendi MP3 dosyasının linkini veya public klasöründeki adını yazmalı */}
+                    <audio ref={audioRef} loop autoPlay>
+                        <source src="/LoveInTheMay/song.mp3" type="audio/mpeg" />
+                    </audio>
+                    <button onClick={togglePlay} className={`flex items-center justify-center size-10 rounded-full transition-all border ${isPlaying ? 'bg-primary text-white border-primary shadow-lg shadow-primary/30 pulse-btn' : 'bg-primary/10 text-primary hover:bg-primary/20 border-primary/20'}`}>
+                        <span className="material-symbols-outlined">{isPlaying ? 'pause' : 'music_note'}</span>
                     </button>
                     <button className="md:hidden flex items-center justify-center size-10 rounded-full bg-slate-100 dark:bg-slate-800">
                         <span className="material-symbols-outlined">menu</span>

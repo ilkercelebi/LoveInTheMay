@@ -78,7 +78,7 @@ export default function Hero() {
             <div className="fixed bottom-10 right-10 z-40 hidden xl:block">
                 <div className="flex flex-col items-end gap-2 text-right">
                     <div className="bg-primary/10 text-primary px-4 py-2 rounded-full text-xs font-bold border border-primary/20 backdrop-blur-md">
-                        HAZİRAN 2021'DEN BERİ
+                        MAYIS 2021'DEN BERİ
                     </div>
                     <p className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Bölüm 01: Başlangıç</p>
                 </div>
