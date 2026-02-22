@@ -11,7 +11,7 @@ export default function Finale() {
             <div
                 className="absolute inset-0 w-full h-full bg-cover bg-center transition-all duration-1000"
                 title="Romantik çift altın rengi gün batımına doğru yürüyor"
-                style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuBsu93r2_WZyC59NeMnEqHFgGNM7mGNhOUVjncn6yyPBlRbw9ygzE9LJDx32eiORGJjlirbo7edrNabkMJtzX2Wzm9RdXVOiTZ3HN6VStsElgvE4Yvz67pAIKX0NNfdKsSlaCgKGJrG-RHxwoCjP02SSBuzj4c3NRYtn2UU8OZEauKUBeqcdgrXkIopGgGeKObmiD5et0xIsMCXbO0OH5peybhkjRzwF-s0kX7F_-EqkkSVnj5zJMGeLoXSKo3OH-9N5opi7fpPAA')" }}
+                style={{ backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url('/LoveInTheMay/finale-bg.jpeg')" }}
             >
             </div>
 

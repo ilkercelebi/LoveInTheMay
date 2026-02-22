@@ -48,9 +48,6 @@ export default function Header() {
                     <a className="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200" href="#story">
                         Başlangıç
                     </a>
-                    <a className="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200" href="#timeline">
-                        Zaman Çizelgesi
-                    </a>
                     <a className="text-sm font-semibold hover:text-primary transition-colors text-slate-700 dark:text-slate-200" href="#gallery">
                         Anılar
                     </a>

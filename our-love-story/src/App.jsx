@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import Timeline from './components/Timeline'
 import Memories from './components/Memories'
 import Reasons from './components/Reasons'
 import Letter from './components/Letter'
@@ -17,9 +16,6 @@ function App() {
       <div className="flex-grow">
         <section id="story">
           <Hero />
-        </section>
-        <section id="timeline">
-          <Timeline />
         </section>
         <section id="gallery">
           <Memories />
