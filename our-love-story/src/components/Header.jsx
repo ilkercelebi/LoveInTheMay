@@ -7,21 +7,36 @@ export default function Header() {
     const audioRef = useRef(null);
 
     useEffect(() => {
-        // Otomatik oynatmayı denemek için sayfa yüklendiğinde çalışır
-        if (audioRef.current) {
-            const playPromise = audioRef.current.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then(() => {
-                    // Tarayıcı izin verirse otomatik oynatmaya başlar
-                    setIsPlaying(true);
-                }).catch(error => {
-                    // Tarayıcı otomatik sesi engelleyebilir (kullanıcı etkileşimi gerekebilir)
-                    console.log("Otomatik oynatma engellendi, kullanıcının tıklaması gerekiyor.");
-                    setIsPlaying(false);
-                });
+        const tryPlayAudio = () => {
+            if (audioRef.current && audioRef.current.paused) {
+                const playPromise = audioRef.current.play();
+                if (playPromise !== undefined) {
+                    playPromise.then(() => {
+                        setIsPlaying(true);
+                        document.removeEventListener('click', tryPlayAudio);
+                        document.removeEventListener('touchstart', tryPlayAudio);
+                        document.removeEventListener('scroll', tryPlayAudio);
+                    }).catch(error => {
+                        console.log("Otomatik oynatma engellendi, kullanıcının tıklaması gerekiyor.");
+                        setIsPlaying(false);
+                    });
+                }
             }
-        }
+        };
+
+        // Sayfa ilk yüklendiğinde otomatik oynatmayı dene
+        tryPlayAudio();
+
+        // Eğer ilk deneme başarısız olursa (tarayıcı engellerse), kullanıcının herhangi bir etkileşiminde oynatmayı dene
+        document.addEventListener('click', tryPlayAudio);
+        document.addEventListener('touchstart', tryPlayAudio);
+        document.addEventListener('scroll', tryPlayAudio, { once: true });
+
+        return () => {
+            document.removeEventListener('click', tryPlayAudio);
+            document.removeEventListener('touchstart', tryPlayAudio);
+            document.removeEventListener('scroll', tryPlayAudio);
+        };
     }, []);
 
     const togglePlay = () => {
