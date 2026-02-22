@@ -70,7 +70,7 @@ export default function Memories() {
         if (slideshowOpen) {
             interval = setInterval(() => {
                 setCurrentIndex((prev) => (prev + 1) % filteredMemories.length);
-            }, 3000); // 3 saniyede bir otomatik geçiş
+            }, 2000); // 2 saniyede bir otomatik geçiş
         }
         return () => {
             if (interval) clearInterval(interval);

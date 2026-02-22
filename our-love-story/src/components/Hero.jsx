@@ -46,10 +46,10 @@ export default function Hero() {
 
                     {/* CTA Button */}
                     <div className="mt-4 flex flex-col items-center gap-16">
-                        <button className="pulse-btn flex items-center justify-center px-10 h-14 bg-primary text-white rounded-full text-lg font-bold shadow-xl shadow-primary/30 hover:shadow-primary/50 transition-all active:scale-95">
+                        <a href="#gallery" className="pulse-btn flex items-center justify-center px-10 h-14 bg-primary text-white rounded-full text-lg font-bold shadow-xl shadow-primary/30 hover:shadow-primary/50 transition-all active:scale-95">
                             <span>Hikayemizi Keşfet</span>
                             <span className="material-symbols-outlined ml-2">arrow_forward</span>
-                        </button>
+                        </a>
 
                         {/* Scroll Indicator */}
                         <div className="flex flex-col items-center gap-2 opacity-60">

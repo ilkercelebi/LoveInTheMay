@@ -20,11 +20,11 @@ export default function Surprise() {
                 </div>
 
                 <h1 className="text-slate-100 tracking-tight text-5xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Ve Son Bir Şey Daha...
+                    Burada Senin İçin Bir Sürpriz Olacak
                 </h1>
 
                 <p className="text-slate-400 text-lg md:text-xl font-normal leading-relaxed mb-16 max-w-lg mx-auto">
-                    Sadece senin için bekleyen bir sır var. Yaşadığımız her saniye bizi buraya getirdi. Bir sonraki bölümü keşfetmek için aşağıya tıkla.
+                    İlerleyen zamanlarda burada senin için çok özel bir sürpriz yer alacak. Zamanı geldiğinde bu kilit açılacak...
                 </p>
 
                 {/* Interactive Envelope Component */}
@@ -53,9 +53,9 @@ export default function Surprise() {
                 </div>
 
                 {/* Action Button */}
-                <button className="group flex items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-white px-8 py-4 md:px-10 md:py-5 rounded-full text-base md:text-lg font-bold shadow-2xl shadow-primary/40 transition-all hover:-translate-y-1 active:scale-95">
-                    <span className="material-symbols-outlined group-hover:animate-pulse">lock_open</span>
-                    <span>Açmak İçin Tıkla</span>
+                <button className="group flex items-center justify-center gap-3 bg-slate-700 text-white px-8 py-4 md:px-10 md:py-5 rounded-full text-base md:text-lg font-bold shadow-2xl transition-all cursor-not-allowed opacity-80">
+                    <span className="material-symbols-outlined">lock</span>
+                    <span>Zamanı Geldiğinde Açılacak</span>
                 </button>
 
                 <p className="mt-8 text-slate-500 text-sm font-medium italic">

@@ -65,7 +65,7 @@ export default function Finale() {
             {/* Final Footer */}
             <footer className="relative z-20 w-full px-6 py-10 flex flex-col items-center justify-center gap-6">
                 <p className="text-white/50 text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-center">
-                    Sonsuza Dek Birlikte • Sevgiyle Hazırlandı
+                    Sevgiyle Yapıldı 2021-Sonsuz
                 </p>
             </footer>
         </div>
