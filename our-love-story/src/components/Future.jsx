@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import img1 from '../assets/memories/at_turu.jpeg';
+import img2 from '../assets/memories/el_ele.jpeg';
+import img3 from '../assets/memories/kapadokya.jpeg';
+import img4 from '../assets/memories/ayna_selfie.jpeg';
+import img5 from '../assets/memories/kar_tatili.jpeg';
 
 const futureData = [
     {
         id: 1,
         category: 'YAPILACAKLAR',
-        bgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0TMhGM0OKdaZ993z8TKf1S-aOulaEFFRIXqS64y39phoTvFibOzkn6dvyAn4wdoU5lIN0E5xVnWm3g02scjFJ3GppKhMTc6J3Ytj1m-o-tycsxAXzJHRF9E9wFvKA-EUvQ1YNxdYW8du7S2vkyx00LbJvin-0QZHbXVsaOmHBeBND51kmrKpFrbX18o-s7imiH3QOqI8Uy24xpjNsTxgsIbbUXtl9c_txsu7y1E9uath4w-lTPBjbdjYrfrg5nrZvV6uPDlrRTQ',
+        bgUrl: img1,
         icon: 'flight_takeoff',
         title: 'Birlikte Seyahat',
         description: 'Dünyanın gizli köşelerini keşfetmek, bir pasaport damgası da aynı anda. Sonraki durağımız: Amalfi Kıyıları.',
@@ -13,7 +18,7 @@ const futureData = [
     {
         id: 2,
         category: 'EVİMİZ',
-        bgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD-9JcV5aJEsV6uJsxDOmuxbcjoRz8B8NUItT9zY9rFLdFyRaJe_BJq_dIcicwOOe2MYDprw4ZrdG29jlVBEYPYlO29TvaYiIOTLvXUSlyul7AQSO8deNT-ah2l9mxXAeKcNF43-CvM85O_eZpCfK84xrl5QghBv3Mi1QE9M-bVSSttSte3AEnvVzYy4EQhqDoqnQmngXp_6Q2VnHsFHUoXVoZZyb91Nz3K_syHfnU-SnwWnqhL-j-ilCByV_YXyT5bS3WzDjxavA',
+        bgUrl: img2,
         icon: 'home_pin',
         title: 'Gelecekteki Evimiz',
         description: 'Işık, bitkiler ve kahkaha yankılarıyla dolu bir sığınak yaratmak. İskandinav tasarım dokunuşları.',
@@ -22,7 +27,7 @@ const futureData = [
     {
         id: 3,
         category: 'YAPILACAKLAR',
-        bgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuABNsVovW5AJMg5w_KplWuC5oHNDWYONk4erNUDqU2eahS_cpjFX0dqTcw10oBYYnRB5cOT8oALWqmlnW2yR_1CaQwoQUrufsNFm9MvThdhGn_ybN4eoqgaxcvSkZcxw92jcq7GFA7jy0g6wPrWKCec0Y7NYIgS57_6fkyTOFjfh7LfBDpMYmoRAzQnLW0J1Zlg4nP11MIlnjS8DqRImIjII6iCA3SwDlT1EAhjFhAk1dp6a8vnrm81y7MOBHF5U9EPrJz80685Tg',
+        bgUrl: img3,
         icon: 'event_note',
         title: 'Özel Dönüm Noktaları',
         description: 'Büyük tarihler ve küçük zaferler. Paylaştığımız her an, sonsuzluk zaman çizelgemizin bir parçası olur.',
@@ -31,7 +36,7 @@ const futureData = [
     {
         id: 4,
         category: 'HAYAT HEDEFLERİ',
-        bgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9idxw5QhBMN0434zW2lLxNl1bD8F1E7N9KHoTeafHGuJTHuOcZ-VNkGAE0tHKjKVSaK1lRzNPfCgwdCHY6AAaIN6m4Ken2C_CaXVLuiDELcKVXcg1FOXqTitTKsArp2s1pfUOKneJaPUyCvjWL20pmzLOMuGnVyry9RoBJ30G0z4-NFKOAI1aLBqIvjvXOZiBRPyRMkfKWm3DzhoWIfdggul85vK1CaVcGEdTIlmEpnhqgD7dyvuUpIqpomwlTfIwr5eTxJpVSQ',
+        bgUrl: img4,
         icon: 'trending_up',
         title: 'Kariyer ve Büyüme',
         description: 'Birbirimizin hayallerini desteklemek ve birlikte zirveye ulaşmak.',
@@ -40,7 +45,7 @@ const futureData = [
     {
         id: 5,
         category: 'AİLE',
-        bgUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDGJkP4ND4gNA82qwcOyawk_LeNO8dJ4hLGM62jXvyzo2cZi3rUyW0_T-OFWWIkHr-wCruaeZk6CLaGU2fWgIBBJKPEVo73Z8RwRwjDPk3GXZQk2eTcaEAYIotYoIAiLofZmGu4JhNTmi4kA2PenW8MSSqGgJjjUtBv0csBk0JifzKWEl4snopGVYhd5gPuklhpDBd_jjWWDiVzVSr5Xhs7hKmMb1tuSf2CSeQkSl2Bk1aZe5Fla8mM7wzaLhJHs6zjZR14LfVJJg',
+        bgUrl: img5,
         icon: 'family_restroom',
         title: 'Genişleyen Ailemiz',
         description: 'Bir gün evimizi minik ayak sesleri ve pati izleriyle dolduracak olmak.',

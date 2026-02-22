@@ -1,77 +1,55 @@
 import React, { useState } from 'react';
+import memory1 from '../assets/memories/kapadokya.jpeg';
+import memory2 from '../assets/memories/kar_tatili.jpeg';
+import memory3 from '../assets/memories/ayna_selfie.jpeg';
+import memory4 from '../assets/memories/el_ele.jpeg';
+import memory5 from '../assets/memories/at_turu.jpeg';
 
 const memoriesData = [
     {
         id: 1,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBx-v8p6YKSBI_CY9t9RnvKhJ5qpf6xR9uome7-ulqzpKt5Qi3Qjokoe-BXb--rJl4W5xgCNvrQ63tmiwO28jopgwtbQSpHnYJZIPBHUSG_ACrIBF0K7jEwmXy-QaC9gPeAcLkqwCLo8o7hBL8vxxSzbCzeciUTPis7JyMStpqGyuSUX5z0N7MdeWuNoeZ5say6HiYAjcXkd_mkw-_yZuCshdCgBbNt_LLoe6Tm-GJWX_tNyfjqRBCbdlQXZKRby8XRte4wxalEng',
-        title: 'Tanıştığımız gün...',
-        date: '12 Nisan 2021',
-        aspect: 'aspect-[4/5]',
+        url: memory1,
+        title: 'Kapadokya Maceramız',
+        date: 'Güzel Günler',
+        aspect: 'aspect-[3/4]',
         rotate: 'polaroid-rotate-left',
-        category: 'Yıldönümleri'
+        category: 'Seyehat & Geziler'
     },
     {
         id: 2,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBUjn6cge48ULGnCi2ZV6vJDzCHN1ewLe2dH1yK3A6AOS7cHngWZeI5Q9GY8OtbF3xsW7lTZQx8awsH270lIvIk-5ydR_CwNBcweZtIJIgAGFg22YBemW3g8dTw0N1zzC7seQDHkjvGxCI6h9NwXyrrRbfbdqvLYm7Jto1iweJy8G8aC9FFu3qK8fwega8VoZQQI1kdHNQFUkVNNiT70P0QxxAMXgWbL4QNQPeLeol6wVcIjEBMsBhsxAwezSw5HOhxwZMNK4Nblg',
-        title: 'Sonsuza dek el ele',
-        date: "Sahil Yürüyüşü '22",
-        aspect: 'aspect-[1/1]',
+        url: memory2,
+        title: 'Ayvalık Tatilimiz',
+        date: 'Yaz Tatili',
+        aspect: 'aspect-[4/5]',
         rotate: 'polaroid-rotate-right',
         category: 'Seyehat & Geziler'
     },
     {
         id: 3,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAjodGAr3noooP41u1qK0flZzoqUsRaJ28kiHMGyfZarJQkD94HBhA2PYHRTJYP3j50mxDdiyO6FE7Bk_b1AVm-S5AFsfeabOTGNUHphKa23xEdb57GuQWyaEdJfTqOn-_rMAhp01Dk7uMkTRRjtqrxg_-MAoN-_RvFrpmqCM5qs9wa6z0qbLLsZwg5KAEW1NNJ_D_bjcs_HVNiy86YR2C49OR-4rc1qQIq_vMof5t6-7taNa7u7gkeOqb5WZvl3AMj83Aj6bc_YQ',
-        title: 'Dünyanın zirvesinde',
-        date: 'İsviçre Alpleri Gezisi',
-        aspect: 'aspect-[3/4]',
+        url: memory3,
+        title: 'Akşam Yemeği Öncesi',
+        date: 'Ayna Selfie\'miz',
+        aspect: 'aspect-[4/5]',
         rotate: 'polaroid-rotate-slight',
-        category: 'Seyehat & Geziler'
+        category: 'Günlük Yaşam'
     },
     {
         id: 4,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC9idxw5QhBMN0434zW2lLxNl1bD8F1E7N9KHoTeafHGuJTHuOcZ-VNkGAE0tHKjKVSaK1lRzNPfCgwdCHY6AAaIN6m4Ken2C_CaXVLuiDELcKVXcg1FOXqTitTKsArp2s1pfUOKneJaPUyCvjWL20pmzLOMuGnVyry9RoBJ30G0z4-NFKOAI1aLBqIvjvXOZiBRPyRMkfKWm3DzhoWIfdggul85vK1CaVcGEdTIlmEpnhqgD7dyvuUpIqpomwlTfIwr5eTxJpVSQ',
-        title: 'İlk yıldönümümüz',
-        date: '20 Mayıs 2022',
-        aspect: 'aspect-[4/5]',
-        rotate: 'polaroid-rotate-right',
+        url: memory4,
+        title: 'Göz Göze',
+        date: 'Birlikte',
+        aspect: 'aspect-[3/4]',
+        rotate: 'polaroid-rotate-left',
         category: 'Yıldönümleri'
     },
     {
         id: 5,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDGJkP4ND4gNA82qwcOyawk_LeNO8dJ4hLGM62jXvyzo2cZi3rUyW0_T-OFWWIkHr-wCruaeZk6CLaGU2fWgIBBJKPEVo73Z8RwRwjDPk3GXZQk2eTcaEAYIotYoIAiLofZmGu4JhNTmi4kA2PenW8MSSqGgJjjUtBv0csBk0JifzKWEl4snopGVYhd5gPuklhpDBd_jjWWDiVzVSr5Xhs7hKmMb1tuSf2CSeQkSl2Bk1aZe5Fla8mM7wzaLhJHs6zjZR14LfVJJg',
-        title: 'Arkadaşlarla yaz günleri',
-        date: 'Piknik Parkı',
-        aspect: 'aspect-[1/1]',
-        rotate: 'polaroid-rotate-left',
-        category: 'Günlük Yaşam'
-    },
-    {
-        id: 6,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAlJ9NCLdKe7qOIXedwmPux8Z9Zwvurst9fwa2nPEmxgZ8t4xfYVrHQ_nQDDHUN_ZgE2Xfeh62NaDUu_hUVS091G7efC4Lbmu2b2syl9kov-q52qPSIjT9AxrtohcDtX_DeObTEvaDTM0gj5yXQZaxrxfqWcWPqrsiPTIkzyC6-TTL8vEsLKbAmeKMzp3sy8GavRFHTmyWoNGXrNpI8ZZgQ5RKCegt2O89Jw0uTY1xkwHh8inIJUtgNnKcdxlCxdJnqt8vOim8qcw',
-        title: 'Yağmurlu kahve buluşmaları',
-        date: 'Merkez Kafe',
-        aspect: 'aspect-[4/3]',
-        rotate: 'polaroid-rotate-slight',
-        category: 'Günlük Yaşam'
-    },
-    {
-        id: 7,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBiZPx4WZCnFdHuA9XmH1PiYOXAJXLu0lc9_Xv9YEDUN4g8iVoNh7pJNqaDadUn0jDcwEqIyYNtTGPyUFD56NwG_9rMSZW7qUfezKWEg9XpOVEmwGWWEmlxnovIqn387nVXH9HFcMcbZJdQjlbC2iJKEJ_HHcqltpwajQ-Iray7Gb1Y6plGVCimSUfRxacBVxTp4X0_xNuQhNfYAiOyPQfFbXH2pBY9o7l0RxI2f1VcE0PXKpzI8FS0QK0k4OplfolfVre2BGHP4g',
-        title: 'Sadece ikimiz, dans ederken',
-        date: 'Oturma odamız',
+        url: memory5,
+        title: 'Doğa İle İç İçe',
+        date: 'At Binme',
         aspect: 'aspect-[3/4]',
-        rotate: 'polaroid-rotate-left',
-        category: 'Günlük Yaşam'
-    },
-    {
-        id: 8,
-        url: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAK-GCSvwHypFAWhuTSKzD9KfBPXd49WW6eB7p_IonYQhWd4ySEiRaUkXhH4gNDnzjtFY_xDI0Mzf94C6i_yAAETBKJOb3lpAaDhh2Ief9AYmkgiocDp1pCPTYNv0xd9ICMjtYYHzdj317aslo7BlNGQzVcZGx3zeR5btj6R1LmD0gRBdqYQxUHOBGV6mMIU5D5pBHSlyjMh93ZmHYfqUjRckAjpxRVJHXpu4kr_bfkpNsS9VBwmW9eCtRhkrE7ne_geND-eYFOQQ',
-        title: 'Yavaş pazar sabahları',
-        date: 'Güzel Evimiz',
-        aspect: 'aspect-[4/5]',
         rotate: 'polaroid-rotate-right',
-        category: 'Günlük Yaşam'
+        category: 'Seyehat & Geziler'
     }
 ];
 

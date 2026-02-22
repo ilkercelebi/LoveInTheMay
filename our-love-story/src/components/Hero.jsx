@@ -1,4 +1,5 @@
 import React from 'react';
+import heroImage from '../assets/memories/kapadokya.jpeg';
 
 export default function Hero() {
     return (
@@ -22,9 +23,9 @@ export default function Hero() {
                         <div className="absolute -inset-1 bg-gradient-to-r from-accent-gold via-primary/50 to-accent-gold rounded-xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
                         <div className="relative overflow-hidden rounded-xl gold-glow border-4 border-white dark:border-slate-800 w-64 h-80 md:w-80 md:h-[420px] shadow-2xl">
                             <img
-                                alt="Günbatımında romantik çift silüeti"
+                                alt="Romantik çift"
                                 className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdcGSZm-09G1zJSp_uQ1yki0__sBDX14A1E2Xelp0_tkwVK9n7n6iwmUbWlRP3zdHBn5r-4lvP_5mm-tdYTZXStCPPpTXbDvaG6CBymwxb96DhUmZ_UtmqB2O54BE0o__G3JaD5hva4sfDehbbj_5tAbbRaXiwl4WoppGhynxxEZIZ2ICqeO1q9QdVIpM1dZStK3ZBZiiRFJ9f9p08wMa5O2TVx_kjS8UmZ_uk-nl9jBJXJ9Dt0Q4nxEnnWXgd5zu5ENCVf5VWkA"
+                                src={heroImage}
                             />
                         </div>
                         {/* Decorative Element */}

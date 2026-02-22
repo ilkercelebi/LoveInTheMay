@@ -35,24 +35,27 @@ export default function Letter() {
                             Sana Bir Mektup
                         </h1>
 
-                        <div className="w-full space-y-6 text-slate-700 font-typewriter leading-relaxed text-lg">
-                            <p>En Sevdiğim,</p>
+                        <div className="w-full space-y-6 text-slate-700 font-typewriter leading-relaxed text-lg lg:text-xl">
+                            <p className="font-bold text-2xl text-primary">Hayatımın Anlamına,</p>
 
                             <p className="indent-8">
-                                Tanıştığımız o ilk andan beri aramızda çok özel bir şey olduğunu biliyordum. O günden bu yana geçen her gün, hikayemizin paha biçilmez ve muhteşem bir bölümü oldu. Paylaştığımız kahkahalara ve bizi birbirimize bağlayan o sessiz anlara değer veriyorum.
+                                Belki bu kelimeler hissettiklerimi anlatmaya yetmeyecek ama denemek istiyorum. Seni ne kadar çok sevdiğimi düşünmek bile bazen nefesimi kesiyor. Hayatıma girdiğin o ilk andan beri her şey o kadar güzel, o kadar farklı ki... Benim için bir sevgili olmanın çok ötesindesin; sırdaşım, en yakın arkadaşım, tek sığınağım ve huzurum oldun.
                             </p>
 
                             <p className="indent-8">
-                                Sen benim kalbim, ruhum ve sonsuzluğumsun. İster gün batımının peşinden koşalım, ister sessizce oturalım; seninle geçirdiğim her saniye, bana verilmiş ve hiçbir zaman hak ettiğimi bilmediğim bir hediye gibi hissettiriyor. Benim değişmezim, maceram ve yuvam olduğun için teşekkür ederim.
+                                Hayatı böylesine güzel ve yaşanabilir kılman inanılmaz. Sadece varlığın bile kötü geçen bir günümü aydınlatmaya yetiyor. Benim için yaptıkların, gösterdiğin o tarifsiz özen, sıcak kucaklamaların... Seninle geçen en sıradan an bile hafızama kazınan mucizevi bir anı gibi. Kalbim, her atışında senin adını söylüyor sanki.
+                            </p>
+
+                            <p className="indent-8">
+                                Seni sevmek bu dünyadaki en kolay ve en güzel şey. İçimdeki bu aşk her geçen saniye, her geçen yepyeni bir gün daha da büyüyor, taşıyor. Ömrümün sonuna kadar seninle gülmek, seninle ağlamak ve seninle yaşamak istiyorum. Her şeyinle, her şeyimsin. Seni çok, ama çok seviyorum.
                             </p>
 
                             <div className="pt-12 flex flex-col items-end w-full">
-                                <p className="font-handwritten text-2xl text-slate-800">Sonsuza dek senin,</p>
-                                <div className="mt-2 flex flex-col items-center pr-4">
-                                    {/* Buraya sonrasında ismini/isminizi yazabilirsin */}
-                                    <span className="font-handwritten text-3xl text-primary font-bold">Aşkın</span>
-                                    <div className="mt-1 text-primary">
-                                        <span className="material-symbols-outlined fill-1">favorite</span>
+                                <p className="font-handwritten text-3xl text-slate-800">Sonsuz Aşkınla,</p>
+                                <div className="mt-2 flex flex-col items-center pr-12">
+                                    <span className="font-handwritten text-4xl text-primary font-bold">Sevgilin</span>
+                                    <div className="mt-2 text-primary animate-pulse">
+                                        <span className="material-symbols-outlined fill-1 text-2xl">favorite</span>
                                     </div>
                                 </div>
                             </div>

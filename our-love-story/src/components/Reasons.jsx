@@ -6,10 +6,10 @@ export default function Reasons() {
             {/* Section Header */}
             <div className="text-center mb-16 relative z-10">
                 <h2 className="text-5xl font-extrabold tracking-tight mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary to-pink-400">
-                    Seni Sevme Nedenlerim
+                    Hayatımı Güzelleştirmelerin
                 </h2>
                 <p className="text-slate-500 dark:text-slate-400 max-w-lg mx-auto text-lg">
-                    Dünyamı aydınlatan küçük şeylerin bir koleksiyonu. Gizli bir nedeni ortaya çıkarmak için kalplerin üzerine gel.
+                    Dünyamı aydınlatan, bana kattığın o güzel anların küçük bir koleksiyonu. Okumak için kalplerin üzerine gel.
                 </p>
             </div>
 
@@ -20,7 +20,7 @@ export default function Reasons() {
                     <div className="heart-card w-48 h-48 md:w-64 md:h-64 bg-white/40 dark:bg-primary/5 border-2 border-primary/30 rounded-full flex flex-col items-center justify-center p-6 md:p-8 text-center backdrop-blur-sm relative">
                         <span className="material-symbols-outlined text-primary text-4xl initial-icon transition-opacity duration-300">colors_spark</span>
                         <p className="reveal-text absolute inset-0 flex items-center justify-center p-4 md:p-6 text-slate-800 dark:text-slate-200 font-medium leading-relaxed text-sm md:text-base">
-                            Parkta bir golden retriever gördüğünde gözlerinin parıldama şekli.
+                            Bana bakınca gözlerinin içinin gülmesi.
                         </p>
                     </div>
                 </div>
@@ -30,7 +30,7 @@ export default function Reasons() {
                     <div className="heart-card w-40 h-40 md:w-48 md:h-48 bg-white/40 dark:bg-primary/5 border-2 border-primary/30 rounded-full flex items-center justify-center p-4 md:p-6 text-center backdrop-blur-sm relative">
                         <span className="material-symbols-outlined text-primary text-3xl initial-icon transition-opacity duration-300">coffee</span>
                         <p className="reveal-text absolute inset-0 flex items-center justify-center p-4 text-slate-800 dark:text-slate-200 font-medium text-xs md:text-sm">
-                            Kahvemi her zaman hiç sormadan tam istediğim gibi yapman.
+                            Hayatımı en güzel haline getirmen.
                         </p>
                     </div>
                 </div>
@@ -39,8 +39,8 @@ export default function Reasons() {
                 <div className="absolute bottom-[20%] md:bottom-[15%] left-[2%] md:left-[5%] heart-float-slow">
                     <div className="heart-card w-32 h-32 md:w-40 md:h-40 bg-white/40 dark:bg-primary/5 border-2 border-primary/30 rounded-full flex items-center justify-center p-4 md:p-6 text-center backdrop-blur-sm relative">
                         <span className="material-symbols-outlined text-primary text-2xl initial-icon transition-opacity duration-300">auto_awesome</span>
-                        <p className="reveal-text absolute inset-0 flex items-center justify-center p-3 md:p-4 text-slate-800 dark:text-slate-200 font-medium text-[10px] md:text-xs">
-                            Tüm odayı dolduran o bulaşıcı kahkahan.
+                        <p className="reveal-text absolute inset-0 flex items-center justify-center p-3 md:p-4 text-slate-800 dark:text-slate-200 font-medium text-[10px] md:text-[11px]">
+                            Göğsüne yattığımda kalbinin benim için o hızlı çarpışını duymak.
                         </p>
                     </div>
                 </div>
@@ -49,8 +49,8 @@ export default function Reasons() {
                 <div className="absolute top-[50%] md:top-[40%] right-[5%] md:right-[10%] heart-float">
                     <div className="heart-card w-44 h-44 md:w-56 md:h-56 bg-white/40 dark:bg-primary/5 border-2 border-primary/30 rounded-full flex items-center justify-center p-6 md:p-8 text-center backdrop-blur-sm relative">
                         <span className="material-symbols-outlined text-primary text-4xl initial-icon transition-opacity duration-300">volunteer_activism</span>
-                        <p className="reveal-text absolute inset-0 flex items-center justify-center p-4 md:p-6 text-slate-800 dark:text-slate-200 font-medium text-xs md:text-base">
-                            Dışarısı soğukken elimi kendi cebinde tutman.
+                        <p className="reveal-text absolute inset-0 flex items-center justify-center p-4 md:p-6 text-slate-800 dark:text-slate-200 font-medium text-xs md:text-sm">
+                            Tüm zorlukların üstesinden birlikte gelebilmemiz.
                         </p>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ export default function Reasons() {
                     <div className="heart-card w-56 h-56 md:w-72 md:h-72 bg-white/40 dark:bg-primary/5 border-2 border-primary/30 rounded-full flex items-center justify-center p-8 md:p-10 text-center backdrop-blur-sm relative">
                         <span className="material-symbols-outlined text-primary text-5xl initial-icon transition-opacity duration-300">nightlight</span>
                         <p className="reveal-text absolute inset-0 flex items-center justify-center p-6 md:p-8 text-slate-800 dark:text-slate-200 font-medium leading-relaxed text-sm md:text-base">
-                            Gelecek için en çılgın hayallerimizi konuştuğumuz o gece yarısı sohbetleri.
+                            Sımsıcak kucaklamalarınla bana her zaman evimde hissettirmen.
                         </p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Reasons() {
                     <div className="heart-card w-28 h-28 md:w-36 md:h-36 bg-white/40 dark:bg-primary/5 border-2 border-primary/30 rounded-full flex items-center justify-center p-3 md:p-4 text-center backdrop-blur-sm relative">
                         <span className="material-symbols-outlined text-primary text-xl initial-icon transition-opacity duration-300">music_note</span>
                         <p className="reveal-text absolute inset-0 flex items-center justify-center p-3 md:p-4 text-slate-800 dark:text-slate-200 font-medium text-[9px] md:text-[10px]">
-                            Sabahları hazırlanırken mırıldanman.
+                            Kalbimi neşeyle dolduran o güzel gülüşün.
                         </p>
                     </div>
                 </div>
