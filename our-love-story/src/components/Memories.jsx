@@ -36,11 +36,11 @@ const memoriesData = [
     {
         id: 4,
         url: memory4,
-        title: 'Göz Göze',
+        title: 'Kalp Kalbe',
         date: 'Birlikte',
         aspect: 'aspect-[3/4]',
         rotate: 'polaroid-rotate-left',
-        category: 'Yıldönümleri'
+        category: 'Tatlı Anlar'
     },
     {
         id: 5,
@@ -53,7 +53,7 @@ const memoriesData = [
     }
 ];
 
-const categories = ['Tüm Anlar', 'Seyehat & Geziler', 'Yıldönümleri', 'Günlük Yaşam'];
+const categories = ['Tüm Anlar', 'Seyehat & Geziler', 'Tatlı Anlar', 'Günlük Yaşam'];
 
 export default function Memories() {
     const [slideshowOpen, setSlideshowOpen] = useState(false);

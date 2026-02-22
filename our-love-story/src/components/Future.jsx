@@ -1,24 +1,19 @@
 import React, { useState } from 'react';
-import img1 from '../assets/memories/at_turu.jpeg';
-import img2 from '../assets/memories/el_ele.jpeg';
-import img3 from '../assets/memories/kapadokya.jpeg';
-import img4 from '../assets/memories/ayna_selfie.jpeg';
-import img5 from '../assets/memories/kar_tatili.jpeg';
 
 const futureData = [
     {
         id: 1,
         category: 'YAPILACAKLAR',
-        bgUrl: img1,
+        bgUrl: 'https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
         icon: 'flight_takeoff',
         title: 'Birlikte Seyahat',
-        description: 'Dünyanın gizli köşelerini keşfetmek, bir pasaport damgası da aynı anda. Sonraki durağımız: Amalfi Kıyıları.',
-        tags: ['14 Destinasyon', 'Sonraki: İtalya']
+        description: 'Dünyanın gizli köşelerini keşfetmek, bir pasaport damgası da aynı anda. Sonraki durağımız: Batum.',
+        tags: ['14 Destinasyon', 'Sonraki: Batum']
     },
     {
         id: 2,
         category: 'EVİMİZ',
-        bgUrl: img2,
+        bgUrl: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
         icon: 'home_pin',
         title: 'Gelecekteki Evimiz',
         description: 'Işık, bitkiler ve kahkaha yankılarıyla dolu bir sığınak yaratmak. İskandinav tasarım dokunuşları.',
@@ -27,7 +22,7 @@ const futureData = [
     {
         id: 3,
         category: 'YAPILACAKLAR',
-        bgUrl: img3,
+        bgUrl: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80', // Beautiful celebratory setting/events
         icon: 'event_note',
         title: 'Özel Dönüm Noktaları',
         description: 'Büyük tarihler ve küçük zaferler. Paylaştığımız her an, sonsuzluk zaman çizelgemizin bir parçası olur.',
@@ -36,7 +31,7 @@ const futureData = [
     {
         id: 4,
         category: 'HAYAT HEDEFLERİ',
-        bgUrl: img4,
+        bgUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
         icon: 'trending_up',
         title: 'Kariyer ve Büyüme',
         description: 'Birbirimizin hayallerini desteklemek ve birlikte zirveye ulaşmak.',
@@ -45,10 +40,10 @@ const futureData = [
     {
         id: 5,
         category: 'AİLE',
-        bgUrl: img5,
+        bgUrl: 'https://images.unsplash.com/photo-1499540633125-484965b60031?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80', // Very clear, aesthetic young family photo
         icon: 'family_restroom',
         title: 'Genişleyen Ailemiz',
-        description: 'Bir gün evimizi minik ayak sesleri ve pati izleriyle dolduracak olmak.',
+        description: 'Bir gün evimizi minik ayak sesleri ve neşeli çocuk kahkahalarıyla dolduracak olmak.',
         tags: ['Evcil Hayvanlar', 'İsimler']
     }
 ];

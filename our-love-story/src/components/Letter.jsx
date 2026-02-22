@@ -36,18 +36,18 @@ export default function Letter() {
                         </h1>
 
                         <div className="w-full space-y-6 text-slate-700 font-typewriter leading-relaxed text-lg lg:text-xl">
-                            <p className="font-bold text-2xl text-primary">Hayatımın Anlamına,</p>
+                            <p className="font-bold text-2xl text-primary">Canım Sevgilim,</p>
 
                             <p className="indent-8">
-                                Belki bu kelimeler hissettiklerimi anlatmaya yetmeyecek ama denemek istiyorum. Seni ne kadar çok sevdiğimi düşünmek bile bazen nefesimi kesiyor. Hayatıma girdiğin o ilk andan beri her şey o kadar güzel, o kadar farklı ki... Benim için bir sevgili olmanın çok ötesindesin; sırdaşım, en yakın arkadaşım, tek sığınağım ve huzurum oldun.
+                                Birbirimizi ilk gördüğümüz andan beri hayatımdaki her şey değişti. Hayatıma öylesine güzel bir dokunuş yaptın ki, şu an sensiz bir gelecek hayal bile edemiyorum. Benim için başıma gelen en güzel şeysin. Sırdaşım, en yakın arkadaşım, her şeyimi paylaştığım tek insansın.
                             </p>
 
                             <p className="indent-8">
-                                Hayatı böylesine güzel ve yaşanabilir kılman inanılmaz. Sadece varlığın bile kötü geçen bir günümü aydınlatmaya yetiyor. Benim için yaptıkların, gösterdiğin o tarifsiz özen, sıcak kucaklamaların... Seninle geçen en sıradan an bile hafızama kazınan mucizevi bir anı gibi. Kalbim, her atışında senin adını söylüyor sanki.
+                                Sadece yanımda olman bile kötü geçen her şeyi unutturmaya yetiyor. Seninle sıradan bir günde yürüyüş yapmak, bir şeyler izlerken uyuya kalmak, birbirimize bakıp durduk yere gülmek... Hayatımdaki en huzurlu anlar hep seninle olan anlar. Bana gösterdiğin bu kocaman sevgi ve şefkat için çok teşekkür ederim.
                             </p>
 
                             <p className="indent-8">
-                                Seni sevmek bu dünyadaki en kolay ve en güzel şey. İçimdeki bu aşk her geçen saniye, her geçen yepyeni bir gün daha da büyüyor, taşıyor. Ömrümün sonuna kadar seninle gülmek, seninle ağlamak ve seninle yaşamak istiyorum. Her şeyinle, her şeyimsin. Seni çok, ama çok seviyorum.
+                                Sen benim için her şeyden daha değerlisin. Zaman ne kadar geçerse geçsin bu içimdeki sevgi hiç azalmıyor, her sabah sana yeniden aşık olarak uyanıyorum. Kurduğum bütün hayallerin, yürüdüğüm bütün yolların sonunda sen varsın. İyi ki varsın, iyi ki yanımdasın. Seni çok seviyorum.
                             </p>
 
                             <div className="pt-12 flex flex-col items-end w-full">
